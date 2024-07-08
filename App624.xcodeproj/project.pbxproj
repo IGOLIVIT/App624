@@ -32,6 +32,12 @@
 		782FF1152C2C16D200B1AB2F /* SpacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FF1142C2C16D200B1AB2F /* SpacesViewModel.swift */; };
 		782FF11B2C2C43CE00B1AB2F /* GarderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FF11A2C2C43CE00B1AB2F /* GarderDetail.swift */; };
 		782FF11D2C2C512500B1AB2F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FF11C2C2C512500B1AB2F /* SettingsViewModel.swift */; };
+		7853FCF02C3C463E00956529 /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FCEF2C3C463E00956529 /* s.swift */; };
+		7853FCF22C3C464300956529 /* d.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FCF12C3C464300956529 /* d.swift */; };
+		7853FCF42C3C464900956529 /* w.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853FCF32C3C464900956529 /* w.swift */; };
+		7853FCF72C3C469C00956529 /* ApphudSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7853FCF62C3C469C00956529 /* ApphudSDK */; };
+		7853FCFA2C3C46AB00956529 /* YandexMobileMetrica in Frameworks */ = {isa = PBXBuildFile; productRef = 7853FCF92C3C46AB00956529 /* YandexMobileMetrica */; };
+		7853FCFC2C3C46AB00956529 /* YandexMobileMetricaCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 7853FCFB2C3C46AB00956529 /* YandexMobileMetricaCrashes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,9 @@
 		782FF1142C2C16D200B1AB2F /* SpacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesViewModel.swift; sourceTree = "<group>"; };
 		782FF11A2C2C43CE00B1AB2F /* GarderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarderDetail.swift; sourceTree = "<group>"; };
 		782FF11C2C2C512500B1AB2F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		7853FCEF2C3C463E00956529 /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
+		7853FCF12C3C464300956529 /* d.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d.swift; sourceTree = "<group>"; };
+		7853FCF32C3C464900956529 /* w.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = w.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7853FCFC2C3C46AB00956529 /* YandexMobileMetricaCrashes in Frameworks */,
+				7853FCF72C3C469C00956529 /* ApphudSDK in Frameworks */,
+				7853FCFA2C3C46AB00956529 /* YandexMobileMetrica in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +160,9 @@
 				782FF0FB2C2C122900B1AB2F /* CoreDataStack.swift */,
 				782FF0FD2C2C124600B1AB2F /* Array.swift */,
 				782FF0FF2C2C125100B1AB2F /* CoreModel.xcdatamodeld */,
+				7853FCEF2C3C463E00956529 /* s.swift */,
+				7853FCF12C3C464300956529 /* d.swift */,
+				7853FCF32C3C464900956529 /* w.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,6 +275,11 @@
 			dependencies = (
 			);
 			name = App624;
+			packageProductDependencies = (
+				7853FCF62C3C469C00956529 /* ApphudSDK */,
+				7853FCF92C3C46AB00956529 /* YandexMobileMetrica */,
+				7853FCFB2C3C46AB00956529 /* YandexMobileMetricaCrashes */,
+			);
 			productName = App624;
 			productReference = 782FF0D02C2C0A1A00B1AB2F /* App624.app */;
 			productType = "com.apple.product-type.application";
@@ -288,6 +308,10 @@
 				Base,
 			);
 			mainGroup = 782FF0C72C2C0A1A00B1AB2F;
+			packageReferences = (
+				7853FCF52C3C469C00956529 /* XCRemoteSwiftPackageReference "ApphudSDK" */,
+				7853FCF82C3C46AB00956529 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */,
+			);
 			productRefGroup = 782FF0D12C2C0A1A00B1AB2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,11 +342,14 @@
 				782FF0D62C2C0A1A00B1AB2F /* ContentView.swift in Sources */,
 				782FF0D42C2C0A1A00B1AB2F /* App624App.swift in Sources */,
 				782FF0F62C2C0A9500B1AB2F /* U1.swift in Sources */,
+				7853FCF02C3C463E00956529 /* s.swift in Sources */,
 				782FF1112C2C14C800B1AB2F /* SettingsView.swift in Sources */,
 				782FF1092C2C13D900B1AB2F /* GardenView.swift in Sources */,
+				7853FCF22C3C464300956529 /* d.swift in Sources */,
 				782FF0F42C2C0A9000B1AB2F /* R3.swift in Sources */,
 				782FF1012C2C125100B1AB2F /* CoreModel.xcdatamodeld in Sources */,
 				782FF1132C2C14D000B1AB2F /* SpacesView.swift in Sources */,
+				7853FCF42C3C464900956529 /* w.swift in Sources */,
 				782FF10B2C2C13E200B1AB2F /* GardenViewModel.swift in Sources */,
 				782FF0F02C2C0A8500B1AB2F /* R1.swift in Sources */,
 				782FF0FC2C2C122900B1AB2F /* CoreDataStack.swift in Sources */,
@@ -468,7 +495,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App624/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Garden Guardian";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\n";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -484,7 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App624;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -507,7 +534,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App624/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Garden Guardian";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\nPin Up Flower Game\n";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -523,7 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = IOI.App624;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -557,6 +584,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7853FCF52C3C469C00956529 /* XCRemoteSwiftPackageReference "ApphudSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apphud/ApphudSDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.8;
+			};
+		};
+		7853FCF82C3C46AB00956529 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yandexmobile/metrica-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7853FCF62C3C469C00956529 /* ApphudSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7853FCF52C3C469C00956529 /* XCRemoteSwiftPackageReference "ApphudSDK" */;
+			productName = ApphudSDK;
+		};
+		7853FCF92C3C46AB00956529 /* YandexMobileMetrica */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7853FCF82C3C46AB00956529 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */;
+			productName = YandexMobileMetrica;
+		};
+		7853FCFB2C3C46AB00956529 /* YandexMobileMetricaCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7853FCF82C3C46AB00956529 /* XCRemoteSwiftPackageReference "metrica-sdk-ios" */;
+			productName = YandexMobileMetricaCrashes;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		782FF0FF2C2C125100B1AB2F /* CoreModel.xcdatamodeld */ = {
